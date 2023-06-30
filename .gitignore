@@ -4,3 +4,5 @@ temp
 output
 
 files/hashlist.cache.db
+*.render_template_database
+*.shaders
