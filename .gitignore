@@ -1,0 +1,6 @@
+DXDecompiler
+node_modules
+temp
+output
+
+files/hashlist.cache.db

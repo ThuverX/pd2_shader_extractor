@@ -1,0 +1,350 @@
+<diesel_render_system>
+    <render_templates>
+        <template name="3_tap_filter" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="3_tap_filter:default"/>
+            </technique>
+        </template>
+        <template name="3_tap_filter:VERTICAL" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="3_tap_filter:default:VERTICAL"/>
+            </technique>
+        </template>
+        <template name="4_tap_filter" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="4_tap_filter:default"/>
+            </technique>
+        </template>
+        <template name="4_tap_filter_r" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="4_tap_filter_r:default"/>
+            </technique>
+        </template>
+        <template name="9_tap_filter" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="9_tap_filter:default"/>
+            </technique>
+        </template>
+        <template name="9_tap_filter_pow" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="9_tap_filter_pow:default"/>
+            </technique>
+        </template>
+        <template name="FXAA_MOD" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="FXAA_MOD:default"/>
+            </technique>
+        </template>
+        <template name="bink_frame" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="bink_frame:default"/>
+            </technique>
+        </template>
+        <template name="bink_frame_old" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="bink_frame_old:default"/>
+            </technique>
+        </template>
+        <template name="blend:ADD" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="blend:default:ADD"/>
+            </technique>
+        </template>
+        <template name="blend:SCREEN" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="blend:default:SCREEN"/>
+            </technique>
+        </template>
+        <template name="bloom_color_correction:BLOOM_OPACITY" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="bloom_color_correction:default:BLOOM_OPACITY"/>
+            </technique>
+        </template>
+        <template name="clear_to_black" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="clear_to_black:default"/>
+            </technique>
+        </template>
+        <template name="darken" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="darken:default"/>
+            </technique>
+        </template>
+        <template name="darken_alpha_only" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="darken_alpha_only:default"/>
+            </technique>
+        </template>
+        <template name="debug_visualization:ALBEDO" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="debug_visualization:default:ALBEDO"/>
+            </technique>
+        </template>
+        <template name="debug_visualization:ALPHA_MASK" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="debug_visualization:default:ALPHA_MASK"/>
+            </technique>
+        </template>
+        <template name="depth_blur" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="depth_blur:default"/>
+            </technique>
+        </template>
+        <template name="depth_downsample" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="depth_downsample:default:DX10_8X_MSAA" platforms="PCD3D10" required_settings="msaa_8x"/>
+                <method name="depth_downsample:default:DX10_4X_MSAA" platforms="PCD3D10" required_settings="msaa_4x"/>
+                <method name="depth_downsample:default:DX10_2X_MSAA" platforms="PCD3D10" required_settings="msaa_2x"/>
+                <method name="depth_downsample:default"/>
+            </technique>
+        </template>
+        <template name="depth_fog" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="depth_fog:default"/>
+            </technique>
+        </template>
+        <template name="depth_fog_lookup" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="depth_fog_lookup:default"/>
+            </technique>
+        </template>
+        <template name="depth_patch_skydome" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="depth_patch_skydome:default"/>
+            </technique>
+        </template>
+        <template name="depth_visualization" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="depth_visualization:default"/>
+            </technique>
+        </template>
+        <template name="dof_apply" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="dof_apply:default"/>
+            </technique>
+        </template>
+        <template name="dof_initial_downsample" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="dof_initial_downsample:default"/>
+            </technique>
+        </template>
+        <template name="dof_near_coc" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="dof_near_coc:default"/>
+            </technique>
+        </template>
+        <template name="dof_small_blur" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="dof_small_blur:default"/>
+            </technique>
+        </template>
+        <template name="downsample_4x4" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="downsample_4x4:default"/>
+            </technique>
+        </template>
+        <template name="edge_blur" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="edge_blur:default"/>
+            </technique>
+        </template>
+        <template name="exposure" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="exposure:default"/>
+            </technique>
+        </template>
+        <template name="gaussian_blur" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="gaussian_blur:default"/>
+            </technique>
+        </template>
+        <template name="gaussian_blur_alpha_not_0" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="gaussian_blur_alpha_not_0:default"/>
+            </technique>
+        </template>
+        <template name="grayscale" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="grayscale:default"/>
+            </technique>
+        </template>
+        <template name="grayscale:VERTEX_COLOR" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="grayscale:default:VERTEX_COLOR"/>
+            </technique>
+        </template>
+        <template name="identity" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="identity:default"/>
+            </technique>
+        </template>
+        <template name="identity_alpha" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="identity_alpha:default"/>
+            </technique>
+        </template>
+        <template name="identity_left" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="identity_left:default"/>
+            </technique>
+        </template>
+        <template name="initial_luminance" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="initial_luminance:default"/>
+            </technique>
+        </template>
+        <template name="iterative_luminance" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="iterative_luminance:default"/>
+            </technique>
+        </template>
+        <template name="levels" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="levels:default"/>
+            </technique>
+        </template>
+        <template name="luminance_adaption" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="luminance_adaption:default"/>
+            </technique>
+        </template>
+        <template name="motion_blur_apply" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="motion_blur_apply:default"/>
+            </technique>
+        </template>
+        <template name="motion_blur_gather" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="motion_blur_gather:default"/>
+            </technique>
+        </template>
+        <template name="msaa_stencil_edge_detection" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="msaa_stencil_edge_detection:default:DX10_8X_MSAA" platforms="PCD3D10" required_settings="msaa_8x"/>
+                <method name="msaa_stencil_edge_detection:default:DX10_4X_MSAA" platforms="PCD3D10" required_settings="msaa_4x"/>
+                <method name="msaa_stencil_edge_detection:default:DX10_2X_MSAA" platforms="PCD3D10" required_settings="msaa_2x"/>
+            </technique>
+        </template>
+        <template name="msaa_subsample_positions" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="msaa_subsample_positions:default:DX10_8X_MSAA" platforms="PCD3D10" required_settings="msaa_8x"/>
+                <method name="msaa_subsample_positions:default:DX10_4X_MSAA" platforms="PCD3D10" required_settings="msaa_4x"/>
+                <method name="msaa_subsample_positions:default:DX10_2X_MSAA" platforms="PCD3D10" required_settings="msaa_2x"/>
+            </technique>
+        </template>
+        <template name="radial_blur" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="radial_blur:default"/>
+            </technique>
+        </template>
+        <template name="radial_blur_apply" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="radial_blur_apply:default"/>
+            </technique>
+        </template>
+        <template name="scene_bright_pass" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="scene_bright_pass:default"/>
+            </technique>
+        </template>
+        <template name="scene_exposure" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="scene_exposure:default:DX10_8X_MSAA" platforms="PCD3D10" required_settings="msaa_8x"/>
+                <method name="scene_exposure:default:DX10_4X_MSAA" platforms="PCD3D10" required_settings="msaa_4x"/>
+                <method name="scene_exposure:default:DX10_2X_MSAA" platforms="PCD3D10" required_settings="msaa_2x"/>
+                <method name="scene_exposure:default"/>
+            </technique>
+        </template>
+        <template name="scene_exposure_no_msaa" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="scene_exposure_no_msaa:default"/>
+            </technique>
+        </template>
+        <template name="scene_luminance" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="scene_luminance:default"/>
+            </technique>
+        </template>
+        <template name="sepia" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="sepia:default"/>
+            </technique>
+        </template>
+        <template name="sepia_levels" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="sepia_levels:default"/>
+            </technique>
+        </template>
+        <template name="soften" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="soften:default"/>
+            </technique>
+        </template>
+        <template name="stencil_mark_skydome" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="stencil_mark_skydome:default" platforms="PS3 X360D3D9"/>
+            </technique>
+        </template>
+        <template name="super_blur_apply" sort_value="">
+            <shader_input_declaration/>
+            <technique name="default">
+                <method name="super_blur_apply:default"/>
+            </technique>
+        </template>
+    </render_templates>
+</diesel_render_system>

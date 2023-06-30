@@ -1,0 +1,23 @@
+{
+    "name": "pd2_shader_extractor",
+    "version": "1.0.0",
+    "author": "ThuverX",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "dev": "nodemon --exec ts-node src/index.ts"
+    },
+    "dependencies": {
+        "bytebuffer": "^5.0.1",
+        "fast-xml-parser": "^4.2.5",
+        "long": "^3.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.6"
+    },
+    "devDependencies": {
+        "@types/bytebuffer": "^5.0.44",
+        "@types/long": "^3.0.27",
+        "@types/node": "^20.3.2"
+    }
+}
